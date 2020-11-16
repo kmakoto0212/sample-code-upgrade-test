@@ -1,7 +1,7 @@
 {
   "packageRules": [
     {
-      "paths": ["+(package.json)"]
+      "paths": ["package.json"]
     }
   ],
   "extends": ["config:base"]
