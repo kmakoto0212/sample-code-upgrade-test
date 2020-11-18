@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && tsc --target esnext --outDir ./src/js --alwaysStrict false"
+    "buildAll": "concurrently \"npm:build-*\"",
+    "build-es5": "tsc",
+    "build-esnext": "tsc --target esnext --outDir ./src/js --alwaysStrict false"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "typescript": "^4.0.5"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "@typescript-eslint/eslint-plugin": "4.8.1",
     "@typescript-eslint/parser": "4.8.1",
     "prettier": "2.1.2",
