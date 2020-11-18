@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsc --noEmit true",
     "buildAll": "concurrently \"npm:build-*\"",
     "build-es5": "tsc",
     "build-esnext": "tsc --target esnext --outDir ./src/js --alwaysStrict false"
