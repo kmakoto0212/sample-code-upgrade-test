@@ -1,4 +1,4 @@
 let hoge: string;
-const fuga = "fuga";
+hoge = "hoge";
 
 export {};
