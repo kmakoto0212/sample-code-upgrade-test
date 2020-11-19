@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "all-install": "npm-run-all -s \"prefix:* -- install\"",
-    "all-install-fast": "npm-run-all -p \"prefix:* -- install\"",
-    "all-update": "npm-run-all -p \"prefix:* -- update\"",
-    "prefix:self": "npm --prefix ./",
-    "prefix:typescript": "npm --prefix ./typescript"
+    "all-install": "run-s install:*",
+    "all-install-fast": "run-p install:*",
+    "all-update": "run-p update:*",
+    "install:self": "npm install --prefix ./",
+    "install:typescript": "npm install --prefix ./typescript",
+    "update:self": "npm update --prefix ./",
+    "update:typescript": "npm update --prefix ./typescript"
   },
   "repository": {
     "type": "git",
