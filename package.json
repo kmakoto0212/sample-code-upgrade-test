@@ -9,9 +9,9 @@
     "all-install-fast": "run-p install:*",
     "all-update": "run-p update:*",
     "install:self": "npm install --prefix ./",
-    "install:typescript": "npm install --prefix ./typescript",
+    "install:typescript": "npm install --prefix ./typescript-sample",
     "update:self": "npm update --prefix ./",
-    "update:typescript": "npm update --prefix ./typescript"
+    "update:typescript": "npm update --prefix ./typescript-sample"
   },
   "repository": {
     "type": "git",
