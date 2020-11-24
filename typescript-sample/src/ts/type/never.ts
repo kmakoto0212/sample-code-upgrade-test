@@ -10,3 +10,5 @@ const hoge = loop(); //hoge: never
 const fuga = (() => {
   throw new Error();
 })(); //fuga: never
+
+export {};

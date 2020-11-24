@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable no-constant-condition */
 var loop = function () {
   while (true) {
