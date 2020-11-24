@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tsc --noEmit true",
+    "test": "tsc --noEmit",
     "buildAll": "concurrently \"npm:build-*\"",
     "build-es5": "tsc",
     "build-esnext": "tsc --target esnext --outDir ./src/js --alwaysStrict false"
