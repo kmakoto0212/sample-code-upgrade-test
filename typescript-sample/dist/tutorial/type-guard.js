@@ -6,7 +6,7 @@ var hello = function (str) {
 //Bad example
 var hoge;
 hoge = Math.random() ? "hoge" : null; //This is indefinite.
-hello(hoge); //NG
+/* hello(hoge); //Error Code. */
 //Good example
 var fuga;
 fuga = Math.random() ? "fuga" : null; //This is indefinite.

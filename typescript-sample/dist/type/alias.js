@@ -1,4 +1,6 @@
 "use strict";
 var hoge = 1000;
 var fuga = 5000;
-var piyo = 100; //NG
+/*
+const piyo: osatu = 100; //Error Code.
+*/

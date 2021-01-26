@@ -6,7 +6,7 @@ const hello = (str) => {
 //Bad example
 let hoge;
 hoge = Math.random() ? "hoge" : null; //This is indefinite.
-hello(hoge); //NG
+/* hello(hoge); //Error Code. */
 //Good example
 let fuga;
 fuga = Math.random() ? "fuga" : null; //This is indefinite.

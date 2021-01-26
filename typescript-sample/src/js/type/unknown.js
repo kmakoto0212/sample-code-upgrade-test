@@ -5,9 +5,9 @@ var __importDefault =
     return mod && mod.__esModule ? mod : { default: mod };
   };
 Object.defineProperty(exports, "__esModule", { value: true });
-const hello_js_1 = __importDefault(require("../../lib/hello.js"));
+const hello_js_1 = __importDefault(require("../../lib/hello.js")); //not declaration files.
 let hoge = hello_js_1.default(); //hoge:unknown
-const fuga = hoge; // NG
+/* const fuga: number = hoge; // NG */
 const say = (arg) => {
   switch (typeof arg) {
     case "string":
