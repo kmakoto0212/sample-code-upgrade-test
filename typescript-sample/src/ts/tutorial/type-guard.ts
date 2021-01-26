@@ -5,8 +5,7 @@ const hello = (str: string) => {
 //Bad example
 let hoge: string | null;
 hoge = Math.random() ? "hoge" : null; //This is indefinite.
-
-hello(hoge); //NG
+/* hello(hoge); //Error Code. */
 
 //Good example
 let fuga: string | null;

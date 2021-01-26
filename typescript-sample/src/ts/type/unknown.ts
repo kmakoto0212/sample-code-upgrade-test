@@ -1,7 +1,7 @@
-import hello from "../../lib/hello.js";
+import hello from "../../lib/hello.js"; //not declaration files.
 
 let hoge: unknown = hello(); //hoge:unknown
-const fuga: number = hoge; // NG
+/* const fuga: number = hoge; // NG */
 
 const say = (arg: unknown) => {
   switch (typeof arg) {
